@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 #ruby-gemset=railstutorial_rails_4_0
 gem 'rails', '3.2.14'
-
+gem 'bootstrap-sass', '2.1'
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
