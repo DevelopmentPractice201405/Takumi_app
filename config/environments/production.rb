@@ -22,7 +22,11 @@ SampleApp::Application.configure do
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
-
+  
+  # アプリケーションへのすべてのアクセスをSSL経由にし、
+  # Strict-Transport-Securityを使用し、
+  # secure cookiesを使用する。
+  config.force_ssl = true
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
