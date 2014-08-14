@@ -44,6 +44,12 @@ class UsersController < ApplicationController
       else
        render 'edit'
       end
+
+        def show
+           @user = User.find(params[:id])
+             @microposts = @user.microposts.paginate(page: params[:page])
+        end
+
     end
 
 private
